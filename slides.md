@@ -230,8 +230,11 @@ There is a trusted source of truth bound to every build. We _could_ do more. We 
 
 # References
 
-- [stylelint](https://stylelint.io/)
-- [stylelint's SCSS standard config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
-- [SCSS Docs: Variables](https://sass-lang.com/documentation/variables)
 - [Zellij](https://zellij.dev/)
-- 
+- [tmux](https://sass-lang.com/documentation/variables)
+- [Stow](https://www.gnu.org/software/stow/manual/stow.html)
+- [Nushell](https://www.nushell.sh/)
+- [Smug](https://github.com/ivaaaan/smug)
+- [mise](https://mise.jdx.dev/getting-started.html)
+- [WezTerm](https://wezfurlong.org/wezterm/index.html)
+- [Neovim](https://neovim.io/)

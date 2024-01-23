@@ -18,7 +18,7 @@ background-size: 450px auto
 
 ???
 
-You signed up for a presentation with "yak shaving" in the title. Thank you, ya wierdos. If you are not familiar with the phrase, that's at least twice as weird, but just to make sure we're all on the same page.
+You signed up for a presentation with "yak shaving" in the title. Thank you. If you are not familiar with the phrase, that's at least twice as weird, but just to make sure we're all on the same page.
 
 ---
 
@@ -29,7 +29,11 @@ class: middle, center
 
 ???
 
-This is a pretty good definition. I don't know about "apparently useless". Did you play Breath of the Wild or Tears of the Kingdom? Code is a lot like that. There's a main quest and that's officially what it's all about. But you spend a lot of time on sidequests. To me, all the auxillary or meta work that you do so you can actually do what people ask for is the yak shaving.
+This is a pretty good definition. I don't know about "apparently useless". I guess _apparently_ is a fine word so long as you know know it's inacurate. Did you play Breath of the Wild or Tears of the Kingdom? Software development is a lot like that.
+
+Sure, the epic is about defeating ganon, but you're gonna have to farm a lot of apples along the way. You can't do the main quest without some number of sidequests. And you may find you spend a disproportionate amount of time on the sidequests... That's the gig.
+
+To me, all the auxillary or meta work that you do so you can actually do what people ask for is the yak shaving.
 
 This should be seen as potentially bad, but it's kind of like tech debt in that you need to make peace with a certain amount of it and understand that everything comes at a cost. Be mindful of that.
 
@@ -40,18 +44,20 @@ This should be seen as potentially bad, but it's kind of like tech debt in that 
 1. Repeating yourself is bad
 2. Configuration as code is good
 3. Bad abstraction is worse than no abstraction
-4. This meeting should have been an email
-5. Clean Code is an overrated book
-6. Neovim is the best text editor of all time
-7. Nothing matters less than whitespace but you fill fight anyone who disagrees with your preference
+4. Optimization is good
+5. Premature optimization is bad
+6. This meeting should have been an email
+7. Clean Code is an overrated book
+8. Neovim is the best text editor of all time
+9. Nothing matters less than whitespace but you will go fisticuffs over 8 space tabs
 
 ???
 
 Maybe you don't agree with all of those points. Typography is actually very important. 
 
-We have convictions.
+We have subjective differences but we share a lot of values. This is particularly evident when it comes to the importance/value of efficiency. No one is going to champion "I don't value time". We don't always see eye to eye on which activities are valuable though.
 
-We have differences in taste but we share a lot of values, particularly when it comes to the importance/value of efficiency.
+As such this presentation is less about trying to prescribe tools to you and more about drawing your attention to inefficiency you may take for granted.
 
 ---
 
@@ -65,7 +71,7 @@ We have differences in taste but we share a lot of values, particularly when it 
 
 When I talk about automation, I'm not talking Unit tests or home kit. I mean anytime you save a few keystrokes by using technology. 
 
-I'll count copy/paste as a crude form of automation, bit I know you're better than that.
+I'll count copy/paste as a crude form of automation, but I know you're better than that.
 
 ---
 
@@ -81,6 +87,16 @@ Everything
 Twice
 
 Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity. Why? Because you are good at a lot of things, but predicting the future isn't one of them.
+
+---
+background-image: url(./assets/evolutionOfAutomation.jpg)
+background-size: 450px auto
+
+# Evolution of Productivity
+
+???
+
+It's sort of an evolution. It's just that you don't want to race to the right side of this like may be implied.
 
 ---
 
@@ -136,12 +152,33 @@ If you feel passionate about it's defaults, configure them. If you don't feel pa
 # Problem
 ## You need to spin up a bunch of tasks when you work on a project 
 
+???
+
+Project is vague here.
+
+Maybe it's "write code for an app".
+
+Maybe it's "document something".
+
+Maybe it's collaborate on a slide deck for a presentation.
+
+Are you context switching to make clacky sounds for a new reason... that counts.
+
 ---
 
 class: middle, center
 
 # Solution
 ## terminal multiplexer
+
+???
+
+For me, this context switching screams "multiplexor" and I'm going to walk you through what I mean by that. 
+
+Maybe you have a cool plugin for VS Code.
+Maybe you have a powershell script.
+
+I like "Zellij" 
 
 ---
 
@@ -150,6 +187,45 @@ background-size: 350px auto
 
 # Multiplexer!?
 
+???
+
+Historically, a terminal multiplexer was a killer app to help with remoting into a server.They allow you to run multiple Linux programs over a single connection. I'm more into the the mulitple programs bit and less about the connection. I use them locally to automate spinning up processes I need to start my day. 
+
+A couple of lines of yaml/json or toml in your home directory and a few keystrokes can drop you into a given directory, open your editor, spin up a dev server and start watching code changess to fire off tests. 
+
+Tmux is by far the most popular solution for this. I've used it for years happily, but currently I'm using an alternative called Zellij. Either is great!
+
+---
+
+# Demo: Multiplexor
+
+TODO: Put a gif or video here.
+
+???
+
+As you can see here, I type a command and I'm ready to write this slide deck. I launch vim, but you can launch your editor of choice just as easy. Note the tab has a dev server hosting the deck locally.
+
+---
+# Problem
+## Who is responsible for install!?
+
+???
+Before we had this script, there was a considerable amount of legwork daily by the build master and build manager to mitigate risk and communicate changes to production.
+
+The build master was on the hook to do more or less the same task every day to facilitate communication around changes. This looks like a job for robots!
+
+---
+# Solution
+## Shell Script in the pipeline
+
+???
+
+Why stop at shell script?
+
+It was "good enough". You got to know when to hold them and know when to fold them.
+
+There is a trusted source of truth bound to every build. We _could_ do more. We could automate a daily email. We could drop the log into a team chat. We have collected the data and compiled it into something human readable. Should we need more, this is ready to evolve further.
+
 ---
 
 # References
@@ -157,3 +233,5 @@ background-size: 350px auto
 - [stylelint](https://stylelint.io/)
 - [stylelint's SCSS standard config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
 - [SCSS Docs: Variables](https://sass-lang.com/documentation/variables)
+- [Zellij](https://zellij.dev/)
+- 

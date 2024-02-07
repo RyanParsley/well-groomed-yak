@@ -47,9 +47,10 @@ This should be seen as potentially bad, but it's kind of like tech debt in that 
 4. Optimization is good
 5. Premature optimization is bad
 6. This meeting should have been an email
-7. Clean Code is an overrated book
-8. Neovim is the best text editor of all time
-9. Nothing matters less than whitespace but you will go fisticuffs over 8 space tabs
+7. Repeating yourself is bad
+8. Clean Code is an overrated book
+9. Neovim is the best text editor of all time
+10. Nothing matters less than whitespace but you will go fisticuffs over 8 space tabs
 
 ???
 
@@ -63,9 +64,14 @@ As such this presentation is less about trying to prescribe tools to you and mor
 
 # Automate all the things
 
-- snippets in your editor and beyond
-- shell scripts
 - macros (keyboard maestro)
+- window management
+- snippets in your editor and beyond
+- shell aliases
+- shell scripts
+- language scripts (rust, python)
+- dotfiles
+
 
 ???
 

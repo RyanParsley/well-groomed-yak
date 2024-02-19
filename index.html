@@ -37,8 +37,11 @@ h1, h2, h3 {
     <textarea id="source" style="display: none">class: middle, center, title
 
 # The Well Groomed Yak
+
 ## Thoughts on delightful productivity
+
 ### Ryan Parsley and Craig McCoy
+
 #### 2024-02-26
 
 ???
@@ -50,7 +53,7 @@ Beyond the realm of standard Integrated Development Environments, this presentat
 background-image: url(./assets/yakShaving.png)
 background-size: 450px auto
 
-# Yak Shaving!? 
+# Yak Shaving!?
 
 ???
 
@@ -60,8 +63,7 @@ You signed up for a presentation with "yak shaving" in the title. Thank you. If 
 
 class: middle, center
 
-> "Any apparently useless activity which, by allowing one to overcome intermediate difficulties, allows one to solve a larger problem."
-> -[wiktionary](https://en.wiktionary.org/wiki/yak_shaving)
+> "Any apparently useless activity which, by allowing one to overcome intermediate difficulties, allows one to solve a larger problem." -[wiktionary](https://en.wiktionary.org/wiki/yak_shaving)
 
 ???
 
@@ -92,7 +94,7 @@ This should be seen as potentially bad, but it's kind of like tech debt in that 
 
 ???
 
-Maybe you don't agree with all of those points. Typography is actually very important. 
+Maybe you don't agree with all of those points. Typography is actually very important.
 
 We have subjective differences but we share a lot of values. This is particularly evident when it comes to the importance/value of efficiency. No one is going to champion "I don't value time". We don't always see eye to eye on which activities are valuable though.
 
@@ -110,16 +112,16 @@ As such this presentation is less about trying to prescribe tools to you and mor
 - language scripts (rust, python)
 - dotfiles
 
-
 ???
 
-When I talk about automation, I'm not talking Unit tests or home kit. I mean anytime you save a few keystrokes by using technology. 
+When I talk about automation, I'm not talking Unit tests or home kit. I mean anytime you save a few keystrokes by using technology.
 
 I'll count copy/paste as a crude form of automation, but I know you're better than that.
 
 ---
 
 # Automate all the things
+
 ## but not too soon
 
 ???
@@ -133,6 +135,7 @@ Twice
 Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity. Why? Because you are good at a lot of things, but predicting the future isn't one of them.
 
 ---
+
 background-image: url(./assets/evolutionOfAutomation.jpg)
 background-size: 450px auto
 
@@ -147,6 +150,7 @@ It's sort of an evolution. It's just that you don't want to race to the right si
 class: middle, center
 
 # Recognition
+
 ## out performs Precognition
 
 ???
@@ -156,6 +160,7 @@ I assert that the skillful persuit of automation is a game about pattern recogni
 ---
 
 class: middle, center
+
 # A lot of tasks are _just_ text manipulation
 
 ???
@@ -185,16 +190,17 @@ background-size: 450px auto
 
 You won't always be able to quantify time saved, but be aware of that critical point where you're simply trading one class of busy work for another.
 
-I say about prettier that the only thing worst than prettier's defaults is not using prettier. Talking about whitespace on the internet is a fine hobby if you're into that, but it's a colossal waste of time in a PR. 
+I say about prettier that the only thing worst than prettier's defaults is not using prettier. Talking about whitespace on the internet is a fine hobby if you're into that, but it's a colossal waste of time in a PR.
 
-Wire up prettier. 
+Wire up prettier.
 
 If you feel passionate about it's defaults, configure them. If you don't feel passionate enough to learn how to configure prettier, you don't feel passionate enough to complain about it.
 
 ---
 
 # Problem
-## You need to spin up a bunch of tasks when you work on a project 
+
+## You need to spin up a bunch of tasks when you work on a project
 
 ???
 
@@ -213,16 +219,17 @@ Are you context switching to make clacky sounds for a new reason... that counts.
 class: middle, center
 
 # Solution
+
 ## terminal multiplexer
 
 ???
 
-For me, this context switching screams "multiplexor" and I'm going to walk you through what I mean by that. 
+For me, this context switching screams "multiplexor" and I'm going to walk you through what I mean by that.
 
 Maybe you have a cool plugin for VS Code.
 Maybe you have a powershell script.
 
-I like "Zellij" 
+I like "Zellij"
 
 ---
 
@@ -233,9 +240,9 @@ background-size: 350px auto
 
 ???
 
-Historically, a terminal multiplexer was a killer app to help with remoting into a server.They allow you to run multiple Linux programs over a single connection. I'm more into the the mulitple programs bit and less about the connection. I use them locally to automate spinning up processes I need to start my day. 
+Historically, a terminal multiplexer was a killer app to help with remoting into a server.They allow you to run multiple Linux programs over a single connection. I'm more into the the mulitple programs bit and less about the connection. I use them locally to automate spinning up processes I need to start my day.
 
-A couple of lines of yaml/json or toml in your home directory and a few keystrokes can drop you into a given directory, open your editor, spin up a dev server and start watching code changess to fire off tests. 
+A couple of lines of yaml/json or toml in your home directory and a few keystrokes can drop you into a given directory, open your editor, spin up a dev server and start watching code changess to fire off tests.
 
 Tmux is by far the most popular solution for this. I've used it for years happily, but currently I'm using an alternative called Zellij. Either is great!
 
@@ -250,25 +257,59 @@ TODO: Put a gif or video here.
 As you can see here, I type a command and I'm ready to write this slide deck. I launch vim, but you can launch your editor of choice just as easy. Note the tab has a dev server hosting the deck locally.
 
 ---
+
 # Problem
+
 ## Who is responsible for install!?
 
 ???
-Before we had this script, there was a considerable amount of legwork daily by the build master and build manager to mitigate risk and communicate changes to production.
+One bit of friction with anytime installs is communicating what's changing and who is on the hook for validation. For a while, Match had a considerable amount of legwork daily by the build master and build manager to mitigate risk and communicate changes to production.
 
 The build master was on the hook to do more or less the same task every day to facilitate communication around changes. This looks like a job for robots!
 
 ---
+
+background-image: url(./assets/whoIsResponsible.png)
+background-size: 450px auto
+
 # Solution
+
 ## Shell Script in the pipeline
 
 ???
+The final result looks like this. Every successful build has a chunk in the logs that lists the developers that commited code since the last deploy.
+
+This started off with me automating the process for myself. If I was going to be occasionally responsible for this context, I wanted to get it easily and fast. Once I wrote a shell script that did what I needed locally, It made sense to remove myself as a bottleneck for this data.
+
+At first, I taught some devs how to run the script, but then it became obvious that there was a lot of value in having this information associated with any given build.
 
 Why stop at shell script?
 
 It was "good enough". You got to know when to hold them and know when to fold them.
 
 There is a trusted source of truth bound to every build. We _could_ do more. We could automate a daily email. We could drop the log into a team chat. We have collected the data and compiled it into something human readable. Should we need more, this is ready to evolve further.
+
+---
+
+background-image: url(./assets/commitsInProd.png)
+background-size: 850px auto
+
+???
+
+A thing that took hours a day to collect and communicate is added to every build in about a second
+
+---
+
+background-image: url(./assets/releaseChecklistTime.png)
+background-size: 450px auto
+
+# Checklist
+
+## Pipeline performance impact
+
+???
+
+The return on investment for such a change is exponential.
 
 ---
 

@@ -29,7 +29,9 @@ class: middle, center
 
 ???
 
-This is a pretty good definition. I don't know about "apparently useless". I guess _apparently_ is a fine word so long as you know know it's inacurate. Did you play Breath of the Wild or Tears of the Kingdom? Software development is a lot like that.
+This is a pretty good definition. The key point is it appears to be useless while it's actually critical to success.
+
+I don't know about "apparently useless". I guess _apparently_ is a fine word so long as you know know it's inacurate. Did you play Breath of the Wild or Tears of the Kingdom? Software development is a lot like that.
 
 Sure, the epic is about defeating ganon, but you're gonna have to farm a lot of apples along the way. You can't do the main quest without some number of sidequests. And you may find you spend a disproportionate amount of time on the sidequests... That's the gig.
 

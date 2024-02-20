@@ -85,8 +85,6 @@ I'll count copy/paste as a crude form of automation, but I know you're better th
 
 Don't throw your hammer away because you get a drill, there will always be nails.
 
-
-
 ---
 
 background-image: url(./assets/optimization.png)
@@ -105,7 +103,7 @@ Write
 Everything
 Twice
 
-Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity. 
+Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity.
 
 Why? Because you are good at a lot of things, but predicting the future isn't one of them.
 
@@ -122,9 +120,9 @@ Natural selection is considered the main mechanism that causes evolution.
 
 Delight & Productivity should drive the evolution of your tools.
 
-Replacing mindless monotony with a delightful script is a win even if the script doesn't save you a tone of time. 
+Replacing mindless monotony with a delightful script is a win even if the script doesn't save you a tone of time.
 
-You're more engaged with the task at hand, you probably understand it better. 
+You're more engaged with the task at hand, you probably understand it better.
 
 Just don't go overboard and remember that all of this is in service of shipping code people actually asked for.
 
@@ -355,7 +353,7 @@ It starts with recognition (people not using same versions of node, struggles, c
 
 Someone writes down which version to use in wiki and communicates it to the team _see the copy and paste!_
 
-You move to codifying version in .nvmrc 
+You move to codifying version in .nvmrc
 
 Everyone uses version locally with command (hey run nvm use! hey did you run nvm use?)
 
@@ -388,3 +386,5 @@ How did recognition drive our evolution?
 - [mise](https://mise.jdx.dev/getting-started.html)
 - [WezTerm](https://wezfurlong.org/wezterm/index.html)
 - [Neovim](https://neovim.io/)
+- [Remark](https://github.com/remarkjs/remark)
+- [Remarker](https://github.com/kt3k/remarker)

@@ -275,7 +275,9 @@ There is a trusted source of truth bound to every build. We _could_ do more. We 
 ---
 
 background-image: url(./assets/commitsInProd.png)
-background-size: 850px auto
+background-size: 750px auto
+
+# Implementation
 
 ???
 

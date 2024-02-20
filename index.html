@@ -107,6 +107,7 @@ As such this presentation is less about trying to prescribe tools to you and mor
 - macros (keyboard maestro)
 - window management
 - snippets in your editor and beyond
+- templates
 - shell aliases
 - shell scripts
 - language scripts (rust, python)
@@ -114,11 +115,19 @@ As such this presentation is less about trying to prescribe tools to you and mor
 
 ???
 
-When I talk about automation, I'm not talking Unit tests or home kit. I mean anytime you save a few keystrokes by using technology.
+When I talk about automation, I mean anytime you save a few keystrokes by using technology.
 
 I'll count copy/paste as a crude form of automation, but I know you're better than that.
 
+Don't throw your hammer away because you get a drill, there will always be nails.
+
+
+
 ---
+
+background-image: url(./assets/optimization.png)
+background-size: auto 500px
+background-position: 75% 80%
 
 # Automate all the things
 
@@ -132,18 +141,40 @@ Write
 Everything
 Twice
 
-Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity. Why? Because you are good at a lot of things, but predicting the future isn't one of them.
+Premature optimization is bad. Bad in app architecture and bad in the broader persuit of productivity. 
+
+Why? Because you are good at a lot of things, but predicting the future isn't one of them.
 
 ---
 
 background-image: url(./assets/evolutionOfAutomation.jpg)
-background-size: 450px auto
+background-size: auto 450px
 
 # Evolution of Productivity
 
 ???
 
-It's sort of an evolution. It's just that you don't want to race to the right side of this like may be implied.
+Natural selection is considered the main mechanism that causes evolution.
+
+Delighted-ness & Productivity should drive the evolution of your tools.
+
+You can write a script because it delights you even if it doesn't make you more productive now.
+
+You will use tools that make you more productive but don't delight you.
+
+---
+
+background-image: url(./assets/gwh.jpeg)
+background-size: auto 450px
+background-position: 50% 80%
+
+# Delightful Productivity
+
+## the good stuff
+
+???
+
+When you can have both, that's the good stuff.
 
 ---
 
@@ -334,8 +365,54 @@ The return on investment for such a change is exponential.
 
 ---
 
+# Problem
+
+## inconsistent node versions
+
+???
+Not using the same node version at all points causes issues.
+
+Locally, in pipelines, and release stages.
+
+---
+
+background-image: url(./assets/nvmrc.png)
+background-size: 97%
+
+# Solution
+
+## .nvmrc -> nvm -> pipeline yml -> automated
+
+???
+It starts with recognition (people not using same versions of node, struggles, ci/cd, etc)
+
+Someone writes down which version to use in wiki and communicates it to the team _see the copy and paste!_
+
+You move to codifying version in .nvmrc 
+
+Everyone uses version locally with command (hey run nvm use! hey did you run nvm use?)
+
+(use version in Ci/CD) (finally we have parity! we could stop here!)
+
+automatically switch locally when changing folders (I Switch projects often)
+
+---
+
+background-image: url(./assets/nvmrc-combined.png)
+background-size: 850px auto
+
+???
+
+Think about how we evolved in this example.
+
+How did recognition drive our evolution?
+
+---
+
 # References
 
+- [Recognition Template](./assets/problem-tracking.md)
+- [Recognition Template - Obsidian](./assets/problem-tracking-obsidian.md)
 - [Zellij](https://zellij.dev/)
 - [tmux](https://sass-lang.com/documentation/variables)
 - [Stow](https://www.gnu.org/software/stow/manual/stow.html)

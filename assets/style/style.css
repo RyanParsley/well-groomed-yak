@@ -53,7 +53,11 @@ li {
 .remark-notes-area h1,
 .remark-notes-area h2,
 .remark-notes-area h3,
-.remark-notes-area strong {
+.remark-notes-area h4,
+.remark-notes-area h5,
+.remark-notes-area h6,
+.remark-notes-area strong,
+.remark-notes-area li {
   color: var(--nord1);
 }
 

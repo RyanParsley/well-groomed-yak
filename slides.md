@@ -376,15 +376,17 @@ How did recognition drive our evolution?
 
 # References
 
+## Craig's templates
+
 - [Recognition Template](./assets/problem-tracking.md)
 - [Recognition Template - Obsidian](./assets/problem-tracking-obsidian.md)
-- [Zellij](https://zellij.dev/)
-- [tmux](https://sass-lang.com/documentation/variables)
-- [Stow](https://www.gnu.org/software/stow/manual/stow.html)
-- [Nushell](https://www.nushell.sh/)
-- [Smug](https://github.com/ivaaaan/smug)
-- [mise](https://mise.jdx.dev/getting-started.html)
-- [WezTerm](https://wezfurlong.org/wezterm/index.html)
-- [Neovim](https://neovim.io/)
-- [Remark](https://github.com/remarkjs/remark)
-- [Remarker](https://github.com/kt3k/remarker)
+
+## Tools I use
+
+- [Zellij (multiplexor)](https://zellij.dev/)
+- [Stow (helps manage dot files)](https://www.gnu.org/software/stow/manual/stow.html)
+- [mise (polyglot version manager)](https://mise.jdx.dev/getting-started.html)
+- [WezTerm (terminal emulator)](https://wezfurlong.org/wezterm/index.html)
+- [Neovim (editor)](https://neovim.io/)
+- [Remark (markdown powered slides)](https://github.com/remarkjs/remark)
+- [Nushell (alternative shell)](https://www.nushell.sh/)

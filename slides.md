@@ -21,7 +21,19 @@ background-size: 450px auto
 
 ???
 
-You signed up for a presentation with "yak shaving" in the title. Thank you. If you are not familiar with the phrase, that's at least twice as weird, but just to make sure we're all on the same page.
+You signed up for a presentation with "yak shaving" in the title.
+
+Thank you.
+
+If you are not familiar with the phrase, that's at least twice as weird, but just to make sure we're all on the same page.
+
+Learning from context is tricky so let's double check we're on the same page with this phrase.
+
+## Bikeshedding != Yak Shaving
+
+When I say yak shaving, I don't mean bikeshedding.
+
+**Law of triviality** - people within an organization commonly give disproportionate weight to trivial issues.
 
 ---
 
@@ -31,15 +43,33 @@ class: middle, center
 
 ???
 
-This is a pretty good definition. The key point is it appears to be useless while it's actually critical to success.
+# Apparently
 
-I don't know about "apparently useless". I guess _apparently_ is a fine word so long as you know know it's inacurate. Did you play Breath of the Wild or Tears of the Kingdom? Software development is a lot like that.
+This is a pretty good definition.
 
-Sure, the epic is about defeating ganon, but you're gonna have to farm a lot of apples along the way. You can't do the main quest without some number of sidequests. And you may find you spend a disproportionate amount of time on the sidequests... That's the gig.
+Don't be misslead by **apparently**. It apears to be what it is not.
+
+The key point is it "appears to be useless" while it's actually critical to success.
+
+I guess _apparently_ is a fine word so long as you know know it's inacurate.
+
+It's now always _critical_ to yak shave, but it can make the bigger task easier, faster, or simply more interesting.
+
+# Delightful is valid
+
+There's a strong assumption baked in to the premise of this. I genuinely enjoy shipping code. Wasting time bumms me out.
+
+You need to be sensitive to the difference between work and effort. You may be busy, but are you getting work done?
+
+That's what we're after here, this idea of delightful productivity.
+
+No one asked for this directly... but there's an implication.
 
 To me, all the auxillary or meta work that you do so you can actually do what people ask for is the yak shaving.
 
-This should be seen as potentially bad, but it's kind of like tech debt in that you need to make peace with a certain amount of it and understand that everything comes at a cost. Be mindful of that.
+# Value implied requirements
+
+If you undervalue the importance of yak shaving it will bum you out. Burn out is real. Implied requirements arepart of the gig, celebrate those as you would shipping code because you can't ship code without these side quests.
 
 ---
 
@@ -58,11 +88,21 @@ This should be seen as potentially bad, but it's kind of like tech debt in that 
 
 ???
 
-Maybe you don't agree with all of those points. Typography is actually very important.
+# "My time is worthless" --No one, ever
 
-We have subjective differences but we share a lot of values. This is particularly evident when it comes to the importance/value of efficiency. No one is going to champion "I don't value time". We don't always see eye to eye on which activities are valuable though.
+No one is going to champion "I don't value time". We don't always see eye to eye on which activities are valuable though.
+
+# Narcissm of minor differences
+
+We have subjective differences but we share a lot of values. This is particularly evident when it comes to the importance/value of efficiency.
+
+# Build your own lightsaber!
 
 As such this presentation is less about trying to prescribe tools to you and more about drawing your attention to inefficiency you may take for granted.
+
+Similar to Craig's last skill up on Personal Knowledge Management, make it personal. Collect tools that work for you. Then, passionately share your system for extracting yaml from markdown. I'm curious to see what you're into!
+
+Maybe you don't agree with all of those points. Typography is actually very important.
 
 ---
 
@@ -160,7 +200,24 @@ class: middle, center
 
 ???
 
-Maybe a good time to talk about how tabular data could not be in excel, but frontmatter in markdown or nod to dataview in obsidian.
+# Obsidian is good inspiration
+
+If you're not familiar, checkout what the obsidian community is accomplishing with markdown.
+
+- task management
+- habit tracking
+- journalling
+- kanban boards feuled by yaml frontmatter
+
+## I like my GUI
+
+"But, editing a table in markdown is hard" Yes, so don't do that. Build the table from a csv or yaml something that's easy to maintain. Then, automate the generation of a table or chart.
+
+## Does that web app have an api?
+
+Azure devops has a CLI and REST API such that you can automate most of what you do via the webapp.
+
+- Do you do similar things daily?
 
 ---
 
@@ -170,9 +227,22 @@ class: middle, center
 
 ???
 
-As knowledge workers, we mostly deal with constructs of our own design. Code is not limited by physics. You don't need to work by a fire to write code about blacksmithing. If parts of your job feel bad, consider part of your job is to fix that
+# Laws of Thermodynamics do not apply to me!
+
+As knowledge workers, we mostly deal with constructs of our own design. Code is not limited by physics. You don't need to work by a fire to write code about blacksmithing.
+
+## Defining your job is part of your job
+
+If parts of your job feel bad, consider part of your job is to fix that
 
 Anecdote about making throw away apps for a startup and getting good at bootstrapping apps such that the tooling to generate apps was my "product".
+
+# It's hard to document mouse interactions
+
+1. do the thing
+2. take a screenshot
+3. draw a box around the important part
+4. repeat indefinitely
 
 ---
 
@@ -183,13 +253,21 @@ background-size: 450px auto
 
 ???
 
+# Balance, though
+
 Sometimes there's a better way and you shouldn't chase it.
 
+# Days of coding can save hours of planning
+
 You won't always be able to quantify time saved, but be aware of that critical point where you're simply trading one class of busy work for another.
+
+# I am not passionate about whitespace
 
 I say about prettier that the only thing worst than prettier's defaults is not using prettier. Talking about whitespace on the internet is a fine hobby if you're into that, but it's a colossal waste of time in a PR.
 
 Wire up prettier.
+
+# If you're not passionate enough to change the defaults, make peace with them
 
 If you feel passionate about it's defaults, configure them. If you don't feel passionate enough to learn how to configure prettier, you don't feel passionate enough to complain about it.
 
@@ -202,11 +280,17 @@ background-size: 600px auto
 
 ???
 
+# You make tradeoffs you're not aware of
+
 The small sharp tools at the top of this chart are sort of the standard lib of productivity. You can count on them being on most computers or it's trivial to assure that they are.
 
 As you move down to the yellow zone, you're mostly just abstracting over the previous toolset. Nx generate is a presumptuous set of opinions to turbo charge templates.
 
+# There is power in tight coupling
+
 Being tightly coupled is often assumed to be bad, but it can be very powerful... but at a cost.
+
+# Replacing a tool is not a failure
 
 Every time you have gained value from a tool is not rendered null should you no longer be able to use it
 
@@ -390,3 +474,15 @@ How did recognition drive our evolution?
 - [Neovim (editor)](https://neovim.io/)
 - [Remark (markdown powered slides)](https://github.com/remarkjs/remark)
 - [Nushell (alternative shell)](https://www.nushell.sh/)
+
+???
+
+The real treasure was the yak we shaved along the way.
+
+---
+
+# See Also
+
+- [Bikeshedding/ Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality)
+- [Narcissism of Small Differences](https://en.wikipedia.org/wiki/Narcissism_of_small_differences)
+- [Knowledge Worker](https://en.wikipedia.org/wiki/Knowledge_worker#:~:text=Knowledge%20workers%20are%20workers%20whose,%22think%20for%20a%20living%22.)

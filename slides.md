@@ -81,6 +81,12 @@ To me, all the auxillary or meta work that you do so you can actually do what pe
 
 If you undervalue the importance of yak shaving it will bum you out. Burn out is real. Implied requirements arepart of the gig, celebrate those as you would shipping code because you can't ship code without these side quests.
 
+# Knowledge work
+
+I'm not intimately familiar with **Peter Drucker's** work directly, but it's cited a lot in content I consume.
+
+Knowledge work can be differentiated from other forms of work by its emphasis on "non-routine" problem solving that requires a combination of **convergent and divergent thinking**.
+
 ---
 
 # Things Developers tend to agree on
@@ -98,6 +104,8 @@ If you undervalue the importance of yak shaving it will bum you out. Burn out is
 
 ???
 
+Maybe you don't agree with all of those points. Typography is actually very important.
+
 # "My time is worthless" --No one, ever
 
 No one is going to champion "I don't value time". We don't always see eye to eye on which activities are valuable though.
@@ -112,7 +120,9 @@ As such this presentation is less about trying to prescribe tools to you and mor
 
 Similar to Craig's last skill up on Personal Knowledge Management, make it personal. Collect tools that work for you. Then, passionately share your system for extracting yaml from markdown. I'm curious to see what you're into!
 
-Maybe you don't agree with all of those points. Typography is actually very important.
+## Viva is not recommended for personal goals
+
+You're on your own, and that's for the better. You do you!
 
 ---
 
